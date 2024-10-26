@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css'; // Ensure semicolon at the end of this line
+import App from './App'; // Ensure semicolon here
+import reportWebVitals from './reportWebVitals'; // Ensure semicolon here
+import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure semicolon here
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
