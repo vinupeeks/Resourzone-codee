@@ -25,7 +25,7 @@ function LoginPage({ setIsLoggedIn }) {
   const handleClickShowPassword = () => setShowPassword((prev) => !prev);
 
   const handleSubmit = async (event) => {
-    console.log(formData);
+    // console.log(formData);
 
     event.preventDefault();
     try {
@@ -34,7 +34,7 @@ function LoginPage({ setIsLoggedIn }) {
         email,
         password,
       });
-      console.log(response.data);
+      // console.log(response.data);
 
       if (response.data.token) {
         localStorage.setItem('token', response.data.token);

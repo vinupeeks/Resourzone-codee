@@ -29,13 +29,13 @@ function AddJob() {
                 ...editingJob,
                 jobMode: capitalizeFirstLetter(editingJob.jobMode)
             });
-            console.log('Editing Job:', editingJob);
+            // console.log('Editing Job:', editingJob);
         }
     }, [editingJob]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        console.log('Changed:', name, value); // Log changes
+        // console.log('Changed:', name, value); // Log changes
         // Update jobDetails with the capitalized jobMode for display
         setJobDetails((prevDetails) => ({
             ...prevDetails,
@@ -45,7 +45,7 @@ function AddJob() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Submitting job details:', jobDetails); // Check what is being sent
+        // console.log('Submitting job details:', jobDetails); // Check what is being sent
         const token = localStorage.getItem('token');
         const config = {
             headers: {
